@@ -6,12 +6,16 @@ export const RemotionRoot: React.FC = () => {
   return (
     <>
       <Composition
-        id="MyComp"
-        component={MyComposition}
-        durationInFrames={60}
-        fps={30}
-        width={1280}
-        height={720}
+      id="TheBackground"
+      component={MyComposition}
+      durationInFrames={120}
+      fps={30}
+      width={1920}
+      height={1080}
+      defaultProps={{
+        textPropOne: 'and donate when and where',
+        textPropTwo: 'it matters most to you'
+      }}
       />
     </>
   );
