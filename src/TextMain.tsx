@@ -6,11 +6,14 @@ import {
     useCurrentFrame,
     useVideoConfig
 } from 'remotion';
+import { MainTextSchema } from './TypeSafety';
 
-export const TextMain: React.FC<{
-    textPropOne: string;
-    textPropTwo: string;
-}> = ({ textPropOne,textPropTwo }) => {
+export const TextMain: React.FC<MainTextSchema> = ({ 
+    textPropOne,
+    textPropTwo,
+    textPropThree,
+    textPropFour }) => {
+
     const frame = useCurrentFrame();
     const { height, fps } = useVideoConfig();
 
@@ -37,17 +40,18 @@ export const TextMain: React.FC<{
         }}>
             <div>
                 <p
-                    className='relative text-9xl text-white font-medium text-wrap'
+                    className='relative text-7xl text-white font-bold text-wrap'
                     style={{
                         transform: `translateY(${wave1}px)`,
                     }}
-                > {textPropOne}</p>
+                > {textPropOne}<span style={{ color: '#00ff9d' }}>{textPropTwo}</span>{textPropThree}</p>
+                
                 <p
-                    className='relative text-9xl text-white font-medium'
+                    className='relative text-7xl text-white font-bold'
                     style={{
                         transform: `translateY(${wave2}px)`,
                     }}
-                > {textPropTwo}</p>
+                > {textPropFour}</p>
             </div>
         </AbsoluteFill>
     );

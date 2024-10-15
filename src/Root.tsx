@@ -8,13 +8,15 @@ export const RemotionRoot: React.FC = () => {
       <Composition
       id="TheBackground"
       component={MyComposition}
-      durationInFrames={120}
+      durationInFrames={90}
       fps={30}
       width={1920}
       height={1080}
       defaultProps={{
-        textPropOne: 'and donate when and where',
-        textPropTwo: 'it matters most to you'
+        textPropOne: 'and',
+        textPropTwo: ' donate ',
+        textPropThree: 'when and where',
+        textPropFour: 'it matters most to you'
       }}
       />
     </>
