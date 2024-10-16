@@ -3,9 +3,6 @@ import { z } from 'zod';
 
 export const mainTextSchema = z.object({
 	textPropOne: z.string(),
-	textPropTwo: z.string(),
-	textPropThree: z.string(),
-	textPropFour: z.string(),
 });
 
 export const categoryBoxSchema = z.object({

@@ -8,9 +8,6 @@ import { MainTextSchema } from "./TypeSafety";
 
 export const MyComposition:React.FC<MainTextSchema> = ({
   textPropOne : propOne,
-  textPropTwo : propTwo,
-  textPropThree : propThree,
-  textPropFour : propFour,
 }) => {
 
   return (
@@ -19,9 +16,6 @@ export const MyComposition:React.FC<MainTextSchema> = ({
     <CategoryTags />
     <TextMain
      textPropOne={propOne} 
-     textPropTwo={propTwo}
-     textPropThree={propThree}
-     textPropFour={propFour}
       />
   </AbsoluteFill>
   );

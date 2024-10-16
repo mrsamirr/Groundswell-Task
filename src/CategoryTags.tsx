@@ -52,7 +52,7 @@ export const CategoryTags: React.FC = () => {
   
 
   return (
-    <div style={{ flex: 1, backgroundColor: '#001a0e', width, height, position: 'relative' }}>
+    <div style={{ flex: 1, backgroundColor: '#001a0e', width, height }}>
       {categories.map((category, index) => (
         <CategoryBox
           key={category}
