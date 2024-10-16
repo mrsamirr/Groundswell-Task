@@ -14,6 +14,7 @@ export const TextMain: React.FC<MainTextSchema> = ({
     // const frame = useCurrentFrame();
     // const { height, fps } = useVideoConfig();
 
+    // reference:  https://github.com/pskd73/remotion-animate-text
     const animation = {
         delimiter: "",
         opacity: [0, 1],
