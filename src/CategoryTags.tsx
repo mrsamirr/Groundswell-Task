@@ -4,8 +4,8 @@ import { categories } from './TheProps';
 
 
 const PADDING = 20;
-const TAG_WIDTH = 150;
-const TAG_HEIGHT = 40;
+const TAG_WIDTH = 190;
+const TAG_HEIGHT = 60;
 
 
 const CategoryBox = ({ text, index, position }: { text: string; index: number; position: { x: number; y: number } }) => {
@@ -32,7 +32,7 @@ const CategoryBox = ({ text, index, position }: { text: string; index: number; p
 
   return (
     <div
-     className='px-1 py-1 border border-solid rounded-2xl border-green-700 text-emerald-500 text-2xl font-extrabold absolute bg-[#084338]'
+     className='mx-3 my-1 border border-solid rounded-lg border-green-700 text-emerald-500 text-2xl font-extrabold absolute bg-[#084338]'
       style={{
         opacity,
         transform: `scale(${scale})`,
