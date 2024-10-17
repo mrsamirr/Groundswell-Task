@@ -50,7 +50,7 @@ const Word: React.FC<{ word: string; index: number; delayPerWord: number }> = ({
 
 export const WordPullUp: React.FC<WordPullUpProps> = ({
   words,
-  delayPerWord = 5,
+  delayPerWord = 3,
   className,
 }) => {
   const wordArray = words.split(' ');
@@ -63,7 +63,7 @@ export const WordPullUp: React.FC<WordPullUpProps> = ({
       }}
     >
       <h1
-        className={`text-white font-display text-center text-4xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm ${className}`}
+        className={`text-white font-display text-center text-6xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm ${className}`}
       >
         {wordArray.map((word, i) => (
           <Word key={i} word={word} index={i} delayPerWord={delayPerWord} />
