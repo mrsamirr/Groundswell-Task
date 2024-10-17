@@ -13,7 +13,7 @@ export const RemotionRoot: React.FC = () => {
       width={1920}
       height={1080}
       defaultProps={{
-        textPropOne: 'and donate when and where it matters most to you',
+        textPropOne: 'and donate when and where it matters to you',
       }}
       />
     </>

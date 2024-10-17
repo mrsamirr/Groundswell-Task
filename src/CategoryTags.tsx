@@ -32,7 +32,7 @@ const CategoryBox = ({ text, index, position }: { text: string; index: number; p
 
   return (
     <div
-     className='mx-3 my-1 border border-solid rounded-lg border-green-700 text-emerald-500 text-2xl font-extrabold absolute bg-[#084338]'
+     className='mx-3 my-1 border border-solid rounded-lg border-green-700 text-emerald-500 text-2xl font-extrabold absolute bg-emerald-700'
       style={{
         opacity,
         transform: `scale(${scale})`,
@@ -72,7 +72,7 @@ export const CategoryTags: React.FC = () => {
 
   return (
     <div 
-    className='relative bg-emerald-950' style={{ width, height }}>
+    className='relative ' style={{ width, height }}>
       {categories.map((category, index) => (
         <CategoryBox
           key={category}
