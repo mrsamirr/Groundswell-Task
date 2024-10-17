@@ -9,7 +9,7 @@ import { AnimatedText } from "remotion-animate-text";
 
 
 export const TextMain: React.FC<MainTextSchema> = ({
-    textPropOne = [],
+    textPropOne,
 }) => {
     // const frame = useCurrentFrame();
     // const { height, fps } = useVideoConfig();

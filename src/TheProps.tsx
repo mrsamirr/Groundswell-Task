@@ -5,6 +5,7 @@ export const categories = [
     'Arts & Culture',
     'Disaster Relief',
     'Education',
+    'Social Justice',
     'Faith Affiliation',
     'Poverty'
   ];
