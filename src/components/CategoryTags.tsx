@@ -1,6 +1,6 @@
-import { useCurrentFrame, useVideoConfig, spring } from 'remotion';
+import { useCurrentFrame, useVideoConfig, spring, AbsoluteFill } from 'remotion';
 import { random } from 'remotion';
-import { categories } from './TheProps';
+import { categories } from '../TheProps';
 
 
 const PADDING = 20;
@@ -27,12 +27,12 @@ const CategoryBox = ({ text, index, position }: { text: string; index: number; p
     from: 0,
     to: 1,
     fps,
-    config: { mass: 0.5 ,damping: 10 },
+    config: { mass: 0.5, damping: 10 },
   });
 
   return (
     <div
-     className='mx-3 my-1 border border-solid rounded-lg border-green-700 text-emerald-500 text-2xl font-extrabold absolute bg-emerald-700'
+      className='mx-3 my-1 border border-solid rounded-lg border-green-700 text-emerald-500 text-2xl font-extrabold absolute bg-[#084338]'
       style={{
         opacity,
         transform: `scale(${scale})`,
@@ -68,18 +68,23 @@ export const CategoryTags: React.FC = () => {
     return { x, y };
 
   };
-  
+
 
   return (
-    <div 
-    className='relative ' style={{ width, height }}>
-      {categories.map((category, index) => (
-        <CategoryBox
-          key={category}
-          text={category}
-          index={index}
-          position={getRandomPosition(index, categories.length)} />
-      ))}
-    </div>
+    <AbsoluteFill
+    style={{
+      backgroundColor: 'linear-gradient(to bottom right, #032626, #003030)'
+    }}>
+      <div
+        className='relative ' style={{ width, height }}>
+        {categories.map((category, index) => (
+          <CategoryBox
+            key={category}
+            text={category}
+            index={index}
+            position={getRandomPosition(index, categories.length)} />
+        ))}
+      </div>
+    </AbsoluteFill>
   );
 };
